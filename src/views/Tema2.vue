@@ -122,9 +122,9 @@
         p.mb-0 En qué momento se va a aplicar el plan a los proveedores.
       .tarjeta.rounded-1.bg--4-claro2.p-3(x="40%" y="57%")
         p.mb-0 Cómo y con qué métodos se llevará a cabo el plan de proveedores. 
-      .tarjeta.rounded-1.bg--4-claro2.p-3(x="20%" y="20%")
-        p 
-      .tarjeta.rounded-1.bg--4-claro2.p-3(x="20%" y="20%")
+      .tarjeta.rounded-1.bg--4-claro2.p-3(x="60%" y="57%")
+        p Quiénes son las personas responsables de llevarlo a cabo.
+      .tarjeta.rounded-1.bg--4-claro2.p-3(x="60%" y="78%") Cómo se comprobará el buen funcionamiento y eficacia de las actividades. 
         p 
     .barras-relleno.d-flex.bg-gray.p-5.justify-content-center.align-items-center.mb-5
       .barras-relleno__contenedor.mx-2.mb-3
@@ -153,15 +153,71 @@
             h2.h1.align-self-start.text-center.mx-auto.w-100 15%
             h3.text-center.align-self-end Plazo de entrega
     p.mb-5 De acuerdo a lo anterior, se deben considerar unas escalas de desempeño, la cual se realiza con base en evaluaciones parciales, tanto en productos o servicios, como en las que se relacionan a continuación: 
-    
-
+    .tabla-a.color-acento-contenido.mb-5 
+      table.text-center
+        thead
+          tr
+            th Calificación de desempeño (%).
+            th Recomendación.
+            th Valoración.
+        tbody
+          tr
+            td Mayor o igual a 96%.
+            td Se aconseja mantener como proveedor.
+            td Excelente. 
+          tr
+            td Mayor o igual a 60% y 
+              br
+              |Menor que 95%.
+            td Se aconseja condicionar su permanencia en el registro de proveedores, a la espera de las mejoras en su desempeño en un periodo no mayor a 6 meses (debe presentar plan de mejora).
+            td Aceptable.
+          tr
+            td Menor que 59%.
+            td Se aconseja que no sea considerado como proveedor, ya que no cumple con los requerimientos establecidos por la empresa para el bien o servicio a solicitar; lo anterior no excluye la posibilidad de poder utilizar sus servicios posteriormente (debe presentar plan de mejora, para reevaluación).
+            td Deficiente.
+    p.mb-5 La evaluación de los proveedores se realiza de forma anual, sin embargo, el control y seguimiento se realiza durante toda la vigencia del contrato
+    #t_2_4.titulo-segundo(data-aos="fade-right")
+      h2 2.4 Fuentes de financiación de la propuesta
+    .row.mb-5.justify-content-center
+      .col-lg-2: img(src='@/assets/curso/54.svg').mb-3
+      .col-lg-10(data-aos="fade-left")
+        p.mb-0.text-justify Una de las barreras para poner en marcha un proyecto, es precisamente las fuentes de financiación, ya que sin duda existen innumerables requisitos para poder acceder a ellas. En el sector de la actividad física el deporte y la recreación, la principal fuente de financiación es la pública, y va ligada principalmente a las instituciones que hacen parte del sistema nacional del deporte; a continuación, se mencionan algunas de ellas:
+    .row.mb-5
+      .col-lg-4
+        .tarjeta.tarjeta-foto-hover(@mouseover="mostrarIndicador = false")
+          .indicador--hover(v-if="mostrarIndicador")
+          .tarjeta-foto-hover__img: img(src='@/assets/curso/55.jpg')
+          .tarjeta-foto-hover__titulo.bg--1.d-flex.justify-content-center.align-items-center.p-3
+            h3.text-center.text-white.mb-0 Fuentes de financiación
+          .tarjeta-foto-hover__tarjeta.rounded-3.bg--1.d-flex.align-items-center.justify-content-center
+            .p-4.text-white
+              h5 Instituciones financieras
+              p Es la fuente tradicional de financiación, en ellas se pueden obtener préstamos para pequeñas y medianas empresas, aunque no existe en el momento productos especializados para el sector, se puede acceder a los diferentes créditos bancarios, como entidades bancarias, cooperativas.
+      .col-lg-4
+        .tarjeta.tarjeta-foto-hover
+          .tarjeta-foto-hover__img: img(src='@/assets/curso/56.jpg')
+          .tarjeta-foto-hover__titulo.bg--3.d-flex.justify-content-center.align-items-center.p-3
+            h3.text-center.mb-0 Fondos de emprendimiento
+          .tarjeta-foto-hover__tarjeta.rounded-3.bg--3.d-flex.align-items-center.justify-content-center
+            .p-4
+              h5 Fondos de emprendimiento
+              p Son instituciones que administran fondos de capital emprendedor, tanto con recursos públicos como privados, se tiene unos compromisos fijos y se realiza un acompañamiento, para que esta inversión tenga el éxito esperado, en algunos casos los recursos asignados son condonables.
+      .col-lg-4
+        .tarjeta.tarjeta-foto-hover
+          .tarjeta-foto-hover__img: img(src='@/assets/curso/57.jpg')
+          .tarjeta-foto-hover__titulo.bg--4.d-flex.justify-content-center.align-items-center.p-3
+            h3.text-center.text-white.mb-0 Programas y convocatorias públicas
+          .tarjeta-foto-hover__tarjeta.rounded-3.bg--4.d-flex.align-items-center.justify-content-center
+            .p-4.text-white
+              h5 Programas y convocatorias públicas
+              p Son programas destinados a la promoción de la actividad física, el deporte y la recreación; se hacen a través de convocatorias públicas en orden municipal, regional o nacional, y se invita a presentar proyectos bajo unos criterios de selección ante entidades como: Colciencias, Ministerio del Deporte, institutos distritales, departamentales y municipales del deporte.
 </template>
 
 <script>
 export default {
   name: 'Tema2',
   data: () => ({
-    // variables de vue
+    mostrarIndicador: true,
   }),
   mounted() {
     this.$nextTick(() => {
@@ -243,4 +299,22 @@ export default {
     height: 230px
   100%
     height: 230px
+.tarjeta-foto-hover
+  position: relative
+  overflow: hidden
+  &:hover
+    .tarjeta-foto-hover__tarjeta
+      transform: translateY(0%)
+
+  &__titulo
+    position: absolute
+    bottom: 0
+    width: 100%
+  &__tarjeta
+    transition: transform 0.3s ease-in-out
+    position: absolute
+    bottom: 0
+    width: 100%
+    height: 100%
+    transform: translateY(100%)
 </style>

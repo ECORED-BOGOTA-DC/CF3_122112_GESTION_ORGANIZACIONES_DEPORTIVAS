@@ -87,7 +87,7 @@
       br
       |Por lo anterior, este componente es de gran importancia, ya que de nada sirve tener una correcta planificación en un proyecto, sino se establecen canales ágiles de comunicación que permitan un trabajo sincronizado y coordinado. Por ello, en la gestión de comunicaciones del proyecto es importante tener en cuenta:
     .row.mb-5
-      .col-lg-3
+      .col-lg-3.mb-3
         .tarjeta-slide-up.bg-gray.h-100
           .tarjeta-slide-up__content.text-center.p-4
             img(src='@/assets/curso/11.svg', alt='Texto que describa la imagen' style='width: 125px').m-auto.mb-3
@@ -95,7 +95,7 @@
           .tarjeta-slide-up__up.bg--1.text-center.p-4
             img(src='@/assets/curso/13.svg', alt='Texto que describa la imagen' style='width: 163px').m-auto.mb-3
             p.text-white Qué información requiere
-      .col-lg-3
+      .col-lg-3.mb-3
         .tarjeta-slide-up.bg-gray.h-100
           .tarjeta-slide-up__content.text-center.p-4
             img(src='@/assets/curso/11.svg', alt='Texto que describa la imagen' style='width: 125px').m-auto.mb-3
@@ -103,7 +103,7 @@
           .tarjeta-slide-up__up.bg--4.text-center.p-4
             img(src='@/assets/curso/12.svg', alt='Texto que describa la imagen' style='width: 163px').m-auto.mb-3
             p.text-white Cuándo la necesita.
-      .col-lg-3
+      .col-lg-3.mb-3
         .tarjeta-slide-up.bg-gray.h-100
           .tarjeta-slide-up__content.text-center.p-4
             img(src='@/assets/curso/11.svg', alt='Texto que describa la imagen' style='width: 125px').m-auto.mb-3
@@ -111,7 +111,7 @@
           .tarjeta-slide-up__up.bg--1.text-center.p-4
             img(src='@/assets/curso/13.svg', alt='Texto que describa la imagen' style='width: 163px').m-auto.mb-3
             p.text-white Quién necesita la información.
-      .col-lg-3
+      .col-lg-3.mb-3
         .tarjeta-slide-up.bg-gray.h-100
           .tarjeta-slide-up__content.text-center.p-4
             img(src='@/assets/curso/11.svg', alt='Texto que describa la imagen' style='width: 125px').m-auto.mb-3
@@ -122,28 +122,28 @@
     p.mb-5 La comunicación debe ser siempre clara, sin ambigüedades permitiendo el intercambio fluido de información. Para ello, existen diferentes tipos de comunicación que se pueden emplear en un proyecto, a saber:
     BotonesC.mb-5
     .row.mb-5
-      .col-lg-4.mb-3
+      .col-lg-4.mb-5
         .tarjeta-icono.bg--1.d-flex.align-items-center.px-5.py-4.h-100
           .tarjeta-icono__icono: img(src='@/assets/curso/15.svg', alt='Texto que describa la imagen' style='width: 102px')
           .tarjeta-icono__texto
               h5.text-white.my-2 Informes de gestión
-      .col-lg-4.mb-3
+      .col-lg-4.mb-5
         .tarjeta-icono.bg--4.d-flex.align-items-center.px-5.py-4.h-100
           .tarjeta-icono__icono: img(src='@/assets/curso/17.svg', alt='Texto que describa la imagen' style='width: 102px')
           .tarjeta-icono__texto
               h5.text-white.my-2 Correos electrónicos
-      .col-lg-4.mb-3
+      .col-lg-4.mb-5
         .tarjeta-icono.bg--1.d-flex.align-items-center.px-5.py-4.h-100
           .tarjeta-icono__icono: img(src='@/assets/curso/18.svg', alt='Texto que describa la imagen' style='width: 102px')
           .tarjeta-icono__texto
               h5.text-white.my-2 Reuniones presenciales o virtuales tipo videoconferencias
     .row.mb-5.justify-content-center
-      .col-lg-4.mb-3
+      .col-lg-4.mb-5
         .tarjeta-icono.bg--1.d-flex.align-items-center.px-5.py-4.h-100
           .tarjeta-icono__icono: img(src='@/assets/curso/19.svg', alt='Texto que describa la imagen' style='width: 102px')
           .tarjeta-icono__texto
               h5.text-white.my-2 Llamadas telefónicas
-      .col-lg-4.mb-3
+      .col-lg-4.mb-5
         .tarjeta-icono.bg--4.d-flex.align-items-center.px-5.py-4.h-100
           .tarjeta-icono__icono: img(src='@/assets/curso/20.svg', alt='Texto que describa la imagen' style='width: 102px')
           .tarjeta-icono__texto
@@ -159,22 +159,23 @@
           | Es de gran importancia identificar por qué se generan los conflictos y qué efectos causan, pero más importante es entender que no es cuestión de tratar de eliminarlos, o peor, ignorarlos, sino que es cuestión de gestionarlos y aprender de ellos. En este sentido, los conflictos deben percibirse como algo natural y valorarse como una oportunidad para el autocrecimiento organizacional, ya que los conflictos surgen cuando una de las partes en litigio o disputa percibe que la otra parte le ha afectado o perjudicado sus intereses. 
       .col-lg-6(data-aos='fade-left')
         img(src='@/assets/curso/21.jpg', alt='Texto que describa la imagen' style='width: 100%') 
-    .row.mb-5
-      .col-lg-4
-        .tarjeta.tarjeta-slide-up2.color-primario--borde.overflow-hidden.bg-gray(style="height: 300px")
+    .row
+      .col-lg-4.mb-3
+        .tarjeta.tarjeta-slide-up2.color-primario--borde.overflow-hidden.bg-gray(style="height: 300px")(@mouseover="mostrarIndicador = false")
+          .indicador--hover(v-if="mostrarIndicador")
           .tarjeta-slide-up__up: img(src='@/assets/curso/22.jpg', alt='Texto que describa la imagen' style='width:100%')
           .tarjeta__texto.p-5.m-auto.d-flex.align-self-center
             h3.text-center.m-auto Ganar a toda costa sin importar lo que pase. 
           .tarjeta__titulo.bg--1.d-flex.align-self-end.aling-items-center.justify-content-center.p-2
             h4.text-center.text-white.m-auto Competencia
-      .col-lg-4
+      .col-lg-4.mb-3
         .tarjeta.tarjeta-slide-up2.color-primario--borde.overflow-hidden.bg-gray(style="height: 300px")
           .tarjeta-slide-up__up: img(src='@/assets/curso/23.jpg', alt='Texto que describa la imagen' style='width:100%')
           .tarjeta__texto.p-5.m-auto.d-flex.align-self-center
             h3.text-center.m-auto Ayuda entre las partes para satisfacción mutua. 
           .tarjeta__titulo.bg--1.d-flex.align-self-end.aling-items-center.justify-content-center.p-2
             h4.text-center.text-white.m-auto Colaboración
-      .col-lg-4
+      .col-lg-4.mb-3
         .tarjeta.tarjeta-slide-up2.color-primario--borde.overflow-hidden.bg-gray(style="height: 300px")
           .tarjeta-slide-up__up: img(src='@/assets/curso/24.jpg', alt='Texto que describa la imagen' style='width:100%')
           .tarjeta__texto.p-5.m-auto.d-flex.align-self-center
@@ -182,14 +183,14 @@
           .tarjeta__titulo.bg--1.d-flex.align-self-end.aling-items-center.justify-content-center.p-2
             h4.text-center.text-white.m-auto Evasión
     .row.mb-5.justify-content-center
-      .col-lg-4
+      .col-lg-4.mb-3
         .tarjeta.tarjeta-slide-up2.color-primario--borde.overflow-hidden.bg-gray(style="height: 300px")
           .tarjeta-slide-up__up: img(src='@/assets/curso/25.jpg', alt='Texto que describa la imagen' style='width:100%')
           .tarjeta__texto.p-5.m-auto.d-flex.align-self-center
             h3.text-center.m-auto Adaptación y aceptación de las demandas para satisfacer la otra parte 
           .tarjeta__titulo.bg--1.d-flex.align-self-end.aling-items-center.justify-content-center.p-2
             h4.text-center.text-white.m-auto Acomodación
-      .col-lg-4
+      .col-lg-4.mb-3
         .tarjeta.tarjeta-slide-up2.color-primario--borde.overflow-hidden.bg-gray(style="height: 300px")
           .tarjeta-slide-up__up: img(src='@/assets/curso/26.jpg', alt='Texto que describa la imagen' style='width:100%')
           .tarjeta__texto.p-5.m-auto.d-flex.align-self-center
@@ -309,7 +310,7 @@ export default {
     BotonesC, // borrar una vez el componente "Muestras" no se necesite
   },
   data: () => ({
-    // variables de vue
+    mostrarIndicador: true, // variables de vue
   }),
   mounted() {
     this.$nextTick(() => {

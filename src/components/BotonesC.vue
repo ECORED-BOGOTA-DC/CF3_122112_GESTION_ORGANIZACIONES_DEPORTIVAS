@@ -105,7 +105,7 @@ export default {
     border-radius: 20px
     position: absolute
     top: -20%
-    left: 100%
+    left: 200%
     background-color: $color-acento-contenido
     width: 300px
     z-index: 100

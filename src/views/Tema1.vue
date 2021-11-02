@@ -56,14 +56,14 @@
           
         h4.text-center Peticiones de cambio  
         p.text-center Posibles cambios en el alcance del proyecto.
-      .col-md.tarjeta.color-acento-contenido.p-5
+      .col-md.tarjeta.color-acento-contenido.texto-oscuro.p-5
         .row.justify-content-center.mb-4
           .col-6
             figure
               img(src='@/assets/curso/8.svg', alt='Texto que describa la imagen')
           
-        h4.text-center Informes
-        p.text-center Resumen de los resultados y ejecución del proyecto. 
+        h4.text-center.texto-oscuro Informes
+        p.text-center.texto-oscuro Resumen de los resultados y ejecución del proyecto. 
       .col-md.tarjeta.color-acento-botones.p-5.text-white
         .row.justify-content-center.mb-4
           .col-6
@@ -407,4 +407,7 @@ export default {
     transform: translateY(-25%)
   .tarjeta-icono__texto
     margin-left: 102px
+.texto-oscuro
+  h1,h2,h3,h4,h5, p
+    color: $color-sistema-texto !important
 </style>

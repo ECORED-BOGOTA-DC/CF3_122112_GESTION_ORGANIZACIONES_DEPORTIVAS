@@ -15,11 +15,12 @@
           )
           .bloque-texto-g__texto.p-4
             p.mb-0 Para que la gestión de manera general se cumpla, es preciso identificar las necesidades y requerimientos del material según el puesto de trabajo, conocer y seleccionar los proveedores, bajo los criterios y normas particulares según la naturaleza de la empresa, hacer el control y seguimiento correspondiente a los proveedores seleccionados hasta culminar todo el proceso de entregas y garantías. Esto también incluye las fuentes de financiación para la consecución de recursos, según los requerimientos y el tipo de organización.
+    #t_2_1.titulo-segundo(data-aos="fade-right") 
+      h2 2.1 Identificación de requerimientos	
     .row.mb-5.justify-content-center
       .col-lg-2(data-aos='fade-right'): img(src='@/assets/curso/40.svg')
       .col-lg-10(data-aos='fade-left')
         p Para la gestión de adquisiciones o requerimientos, es necesario conocer los conceptos relacionados, los elementos, herramientas y técnicas que permitan aprender, qué es y cómo se realiza la planificación de las adquisiciones; existen varias herramientas que permite la identificación de los requerimientos y facilitar la planificación, a continuación, se mencionan algunas:
-    #t_2_1 Identificación de requerimientos	
     TabsB.color-acento-botones.mb-5
       .py-4.py-md-5(titulo="Análisis" :icono="require('@/assets/curso/41.svg')")
         .row.px-5

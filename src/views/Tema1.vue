@@ -121,6 +121,7 @@
             p.text-white Cómo se debe presentar la información. 
     p.mb-5 La comunicación debe ser siempre clara, sin ambigüedades permitiendo el intercambio fluido de información. Para ello, existen diferentes tipos de comunicación que se pueden emplear en un proyecto, a saber:
     BotonesC.mb-5
+    p.mb-5 Según las particularidades de cada proyecto, se define el plan de comunicaciónes que se llevará a cabo, que puede ser:
     .row.mb-5
       .col-lg-4.mb-5
         .tarjeta-icono.bg--1.d-flex.align-items-center.px-5.py-4.h-100

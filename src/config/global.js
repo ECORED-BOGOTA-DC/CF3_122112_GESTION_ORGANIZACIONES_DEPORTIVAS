@@ -149,17 +149,17 @@ export default {
         'clasificación genérica para compras de servicios, obras, contratistas, consultorías y otros servicios.',
     },
     {
-      termino: 'Calidad ',
+      termino: 'Calidad',
       significado:
         'proceso continuo, sin fin, de mejora aplicable a todas las fases y componentes del proyecto, con el fin de mejorar los productos y servicios que la organización oferta.',
     },
     {
-      termino: 'Aseguramiento de la calidad ',
+      termino: 'Aseguramiento de la calidad',
       significado:
         'aplicación de actividades planificadas y sistemáticas relativas a la calidad para asegurar que el proyecto emplee todos los procesos necesarios para cumplir con los requisitos. ',
     },
     {
-      termino: 'Conflicto ',
+      termino: 'Conflicto',
       significado:
         'litigio o disputa percibe que la otra parte le ha afectado o perjudicado sus intereses.',
     },
@@ -182,6 +182,12 @@ export default {
       },
     ],
     contenidoInstruccional: [
+      {
+        nombre: 'Rafael Neftalí Lizcano Reyes',
+        cargo: 'Asesor metodológico y pedagógico',
+        centro:
+          'Centro Industrial del Diseño y la Manufactura - Regional Santander',
+      },
       {
         nombre: 'Camilo Andrés Aramburo Parra',
         cargo: 'Experto técnico',
@@ -241,7 +247,7 @@ export default {
           'Centro Industrial del Diseño y la Manufactura Regional Santander',
       },
       {
-        nombre: 'Nombre',
+        nombre: 'Magdi Khalifah Gamboa ',
         cargo: 'Validación de diseño y contenido',
         centro:
           'Centro Industrial del Diseño y la Manufactura Regional Santander',

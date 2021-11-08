@@ -19,6 +19,7 @@
       .col-lg-2(data-aos='fade-right'): img(src='@/assets/curso/40.svg')
       .col-lg-10(data-aos='fade-left')
         p Para la gestión de adquisiciones o requerimientos, es necesario conocer los conceptos relacionados, los elementos, herramientas y técnicas que permitan aprender, qué es y cómo se realiza la planificación de las adquisiciones; existen varias herramientas que permite la identificación de los requerimientos y facilitar la planificación, a continuación, se mencionan algunas:
+    #t_2_1 Identificación de requerimientos	
     TabsB.color-acento-botones.mb-5
       .py-4.py-md-5(titulo="Análisis" :icono="require('@/assets/curso/41.svg')")
         .row.px-5
@@ -125,7 +126,7 @@
       .tarjeta.rounded-1.bg--4-claro2.p-3(x="60%" y="57%")
         p Quiénes son las personas responsables de llevarlo a cabo.
       .tarjeta.rounded-1.bg--4-claro2.p-3(x="60%" y="78%") Cómo se comprobará el buen funcionamiento y eficacia de las actividades. 
-        p 
+    p.mb-5 Este plan se debe aplicar en el momento en el que se selecciona al proveedor válido para realizar el suministro de la compra. Además, existen algunos instrumentos que se utilizan para realizar el control y evaluación del proveedor en los que se plasma el desempeño según una escala de valor o unos criterios establecidos por la organización, un ejemplo de ello puede ser:
     .barras-relleno.d-flex.bg-gray.p-5.justify-content-center.align-items-center.mb-5
       .barras-relleno__contenedor.mx-2.mb-3
         .barras-relleno__relleno.bg--3.a--1
@@ -188,7 +189,7 @@
           .indicador--hover(v-if="mostrarIndicador")
           .tarjeta-foto-hover__img: img(src='@/assets/curso/55.jpg')
           .tarjeta-foto-hover__titulo.bg--1.d-flex.justify-content-center.align-items-center.p-3
-            h3.text-center.text-white.mb-0 Fuentes de financiación
+            h3.text-center.text-white.mb-0 Instituciones financieras
           .tarjeta-foto-hover__tarjeta.rounded-3.bg--1.d-flex.align-items-center.justify-content-center
             .p-4.text-white
               h5 Instituciones financieras
@@ -280,25 +281,25 @@ export default {
     height: 0
 
   80%
-    height: 300px
+    height: 25%
   100%
-    height: 300px
+    height: 25%
 @keyframes relleno2
   0%
     height: 0
 
   80%
-    height: 170px
+    height: 15%
   100%
-    height: 170px
+    height: 15%
 @keyframes relleno3
   0%
     height: 0
 
   80%
-    height: 230px
+    height: 20%
   100%
-    height: 230px
+    height: 20%
 .tarjeta-foto-hover
   position: relative
   overflow: hidden

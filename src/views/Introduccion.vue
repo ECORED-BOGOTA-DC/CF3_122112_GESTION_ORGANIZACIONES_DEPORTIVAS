@@ -19,8 +19,13 @@
 </template>
 
 <script>
+import BannerInterno from '../components/BannerInterno'
+
 export default {
   name: 'Introduccion',
+  components: {
+    BannerInterno,
+  },
   data: () => ({
     // variables de vue
   }),

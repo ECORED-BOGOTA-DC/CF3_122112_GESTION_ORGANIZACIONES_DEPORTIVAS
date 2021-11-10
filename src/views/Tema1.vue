@@ -302,13 +302,16 @@
 </template>
 
 <script>
+import BannerInterno from '../components/BannerInterno'
+
 import BotonesC from '../components/BotonesC.vue'
 import Muestras from '../components/Muestras' // borrar una vez el componente "Muestras" no se necesite
 export default {
   name: 'Tema1',
   components: {
     Muestras,
-    BotonesC, // borrar una vez el componente "Muestras" no se necesite
+    BotonesC,
+    BannerInterno, // borrar una vez el componente "Muestras" no se necesite
   },
   data: () => ({
     mostrarIndicador: true, // variables de vue

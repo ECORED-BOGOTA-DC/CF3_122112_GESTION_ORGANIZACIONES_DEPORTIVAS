@@ -5,6 +5,7 @@ export default {
       'Este componente comprende conceptos y herramientas que se deben tener en cuenta para la implementación de un proyecto en una organización deportiva. ',
     imagenBannerPrincipal: require('@/assets/curso/banner-princiapal.png'),
     fondoBannerPrincipal: require('@/assets/curso/fondo-banner-principal.png'),
+    fondoBannerInterno: require('@/assets/curso/00.svg'),
   },
   menuPrincipal: {
     menu: [

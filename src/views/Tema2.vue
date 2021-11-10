@@ -216,8 +216,13 @@
 </template>
 
 <script>
+import BannerInterno from '../components/BannerInterno'
+
 export default {
   name: 'Tema2',
+  components: {
+    BannerInterno,
+  },
   data: () => ({
     mostrarIndicador: true,
   }),
